@@ -9,6 +9,7 @@ end
 # The return value should be like:
 #
 # { directorOne => allTheMoneyTheyMade, ... }
+
 def directors_totals(nds)
   result = {}
   nds.each { |director| 
