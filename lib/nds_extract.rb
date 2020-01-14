@@ -14,4 +14,5 @@ def directors_totals(nds)
   nds.each { |director| 
     result[director[:name]] = gross_for_director(director[:movies])
   }
+  return result
 end
