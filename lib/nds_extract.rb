@@ -2,7 +2,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def gross_for_director(director_data)
-  director[:movies].map { |movie| movie[:worldwide_gross] }.reduce(:+)
+  director_data[:movies].map { |movie| movie[:worldwide_gross] }.reduce(:+)
 end
 
 # Write a method that, given an NDS creates a new Hash
